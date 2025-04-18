@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+/* Custom Font */
+body {
+  font-family: "Fira Code", monospace;
+}
+.animated-gradient-border {
+  position: relative;
+  background: linear-gradient(270deg, #64ffda, #ff00ff, #00ffff, #64ffda);
+  background-size: 800% 800%;
+  animation: animatedBorder 6s ease infinite;
+  padding: 5px;
+  border-radius: 50%;
+  width: 328px;
+  height: 328px;
+  box-shadow: 0 0 20px rgba(100, 255, 218, 0.8);
+}
+
+/* Dynamic animated shadow using pseudo element */
+.animated-gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  z-index: -1;
+  background: inherit;
+  filter: blur(30px);
+  opacity: 0.6;
+  animation: animatedBorder 6s ease infinite;
+}
+
+@keyframes animatedBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
