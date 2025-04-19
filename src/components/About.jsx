@@ -43,10 +43,7 @@ export default function About() {
   }, [displayText, isDeleting, currentRoleIndex]);
 
   return (
-    <div
-      id="about"
-      className="min-h-screen bg-[rgb(17,34,64)] text-white relative px-6 md:px-16 pt-16 pb-6 flex flex-col md:flex-row items-center justify-between overflow-hidden"
-    >
+    <div className="min-h-screen bg-[rgb(17,34,64)] text-white relative px-6 md:px-16 pt-16 pb-6 flex flex-col md:flex-row items-center justify-between overflow-hidden">
       {/* Social Icons Left */}
       <div className="hidden md:fixed md:flex flex-col items-center left-4 top-[60%] -translate-y-1/2 space-y-6 z-10">
         <a

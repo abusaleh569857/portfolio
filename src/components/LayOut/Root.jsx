@@ -7,6 +7,7 @@ import EducationSection from "../EducationSection";
 import ExperienceSection from "../ExperienceSection";
 import ContactPage from "../ContactPage";
 import Footer from "../Footer";
+import AboutMe from "../AboutMe";
 // import { Outlet } from "react-router-dom";
 
 const Root = () => {
@@ -14,6 +15,7 @@ const Root = () => {
     <div>
       <Navbar></Navbar>
       <About></About>
+      <AboutMe></AboutMe>
       <Projects></Projects>
       <SkillsPage></SkillsPage>
       <EducationSection></EducationSection>
