@@ -31,7 +31,7 @@ const ExperienceSection = () => {
 
         <div className="py-12">
           {/* Fullstack Projects */}
-          <div className="ml-4 mb-10 p-6 border border-[#64FFDA] rounded-2xl shadow-[0_0_10px_0_#64FFDA50]">
+          <div className=" mb-10 p-6 border border-[#64FFDA] rounded-2xl shadow-[0_0_10px_0_#64FFDA50]">
             <h2 className="text-2xl font-bold text-white mb-1">
               Fullstack Developer
             </h2>
@@ -52,7 +52,7 @@ const ExperienceSection = () => {
           </div>
 
           {/* Project Show Achievement */}
-          <div className="ml-4 mb-10 p-6 border border-[#64FFDA] rounded-2xl shadow-[0_0_10px_0_#64FFDA50]">
+          <div className=" mb-10 p-6 border border-[#64FFDA] rounded-2xl shadow-[0_0_10px_0_#64FFDA50]">
             <h2 className="text-2xl font-bold text-white mb-1">
               Project Showcase Recognition
             </h2>
