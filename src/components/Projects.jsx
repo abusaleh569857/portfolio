@@ -49,10 +49,10 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="px-4 md:px-8 py-10 bg-[rgb(17,34,64)] min-h-screen"
+      className="px-4 md:px-8 py-4 md:py-10 bg-[rgb(17,34,64)] min-h-screen"
     >
       <h1 className="text-4xl font-bold text-center text-white mb-24">
-        <span className="text-[#64FFDA]">02.&nbsp;</span>Projects
+        <span className="text-[#64FFDA]">02.</span>Projects
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mx-1 md:mx-6">
@@ -143,12 +143,12 @@ const Projects = () => {
               {selectedProject.fullDesc}
             </p>
 
-            <div className="flex gap-4">
+            <div className="flex flex-col md:flex-row gap-4">
               <a
                 href={selectedProject.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-1/2 text-center px-4 py-2 border border-[#64FFDA] text-[#64FFDA] rounded hover:bg-[#64FFDA] hover:text-black transition"
+                className="w-full md:w-1/2 text-center px-4 py-2 border border-[#64FFDA] text-[#64FFDA] rounded hover:bg-[#64FFDA] hover:text-black transition"
               >
                 View Code
               </a>
@@ -156,7 +156,7 @@ const Projects = () => {
                 href={selectedProject.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-1/2 text-center px-4 py-2 bg-[#64FFDA] text-black rounded hover:bg-[#52e0c4] transition"
+                className="w-full md:w-1/2 text-center px-4 py-2 bg-[#64FFDA] text-black rounded hover:bg-[#52e0c4] transition"
               >
                 View Website
               </a>

@@ -15,10 +15,10 @@ const ContactPage = () => {
   return (
     <section
       id="contact"
-      className="px-6 md:px-16 py-16 bg-[rgb(17,34,64)] font-mono text-white"
+      className="px-6 md:px-16 pb-6 md:pb-16 bg-[rgb(17,34,64)] font-mono text-white"
     >
-      <h2 className="text-4xl sm:text-3xl mb-12 font-bold text-center">
-        <span className="text-[#64ffda]">06.&nbsp;</span>Contact
+      <h2 className="text-4xl sm:text-3xl mb-6 md:mb-12 font-bold text-center">
+        <span className="text-[#64ffda]">06.</span>Contact
       </h2>
 
       {/* Contact Info Box */}
@@ -85,7 +85,7 @@ const ContactPage = () => {
                 href="https://x.com/Abusaleh_here"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-white transition"
+                className="hover:text-white transition hidden md:block"
               >
                 <FaTwitter />
               </a>

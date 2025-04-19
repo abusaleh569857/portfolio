@@ -37,10 +37,7 @@ const SkillsPage = () => {
   ];
 
   const renderSkills = (title, skills) => (
-    <div
-      id="skills"
-      className="w-full md:w-[48%] bg-[#112240] border-2 border-[#64FFDA]  rounded-2xl shadow-[0_0_20px_#64ffda20] p-6 transition hover:shadow-[0_0_25px_#64ffda40]"
-    >
+    <div className="w-full md:w-[48%] bg-[#112240] border-2 border-[#64FFDA]  rounded-2xl shadow-[0_0_20px_#64ffda20] p-6 transition hover:shadow-[0_0_25px_#64ffda40]">
       <h3 className="text-white text-2xl font-semibold text-center mb-4">
         {title}
       </h3>
@@ -66,11 +63,11 @@ const SkillsPage = () => {
 
   return (
     <section
-      id="Skills"
-      className="px-6 md:px-16 py-16 bg-[rgb(17,34,64)] font-mono text-white"
+      id="skills"
+      className="px-6 md:px-16 pt-8 py-0 md:py-8 bg-[rgb(17,34,64)] font-mono text-white"
     >
-      <h2 className="text-4xl sm:text-3xl mb-10 font-bold text-center">
-        <span className="text-[#64ffda]">03.&nbsp;</span>Skills
+      <h2 className="text-4xl sm:text-3xl mb-20 font-bold text-center">
+        <span className="text-[#64ffda]">03.</span>Skills
       </h2>
       <div className="flex flex-wrap justify-around gap-6">
         {renderSkills("Frontend", frontendSkills)}

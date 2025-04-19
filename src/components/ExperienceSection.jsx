@@ -4,13 +4,13 @@ const ExperienceSection = () => {
   return (
     <div
       id="experience"
-      className="px-6 md:px-16 bg-[rgb(17,34,64)] font-mono text-white pb-12"
+      className="px-6 md:px-16 bg-[rgb(17,34,64)] font-mono text-white pb-0 md:pb-12"
     >
-      <h1 className="text-4xl sm:text-3xl xs:text-2xl mb-12 font-bold text-center">
-        <span className="text-[#64FFDA]">05.&nbsp;</span>Experience
+      <h1 className="text-4xl sm:text-3xl xs:text-2xl mb-8 md:mb-12 font-bold text-center">
+        <span className="text-[#64FFDA]">05.</span>Experience
       </h1>
 
-      <div className="relative border-l-2 border-[#64FFDA] px-2 md:px-12 pl-0 md:pl-12 ml-2 md:ml-12">
+      <div className="relative border-l-2 border-[#64FFDA] px-2 md:px-12 pl-0 md:pl-12 ml-0 md:ml-12">
         {/* Vertical Icons */}
         <div className="absolute left-[-1rem] top-0 h-full flex flex-col justify-between items-center">
           {/* Top Icon */}
@@ -29,7 +29,7 @@ const ExperienceSection = () => {
           </div>
         </div>
 
-        <div className="py-12">
+        <div className="py-12 pl-4 md:pl-0">
           {/* Fullstack Projects */}
           <div className=" mb-10 p-6 border border-[#64FFDA] rounded-2xl shadow-[0_0_10px_0_#64FFDA50]">
             <h2 className="text-2xl font-bold text-white mb-1">
