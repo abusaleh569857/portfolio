@@ -21,7 +21,8 @@ const ContactPage = () => {
         <span className="text-[#64ffda]">06.&nbsp;</span>Contact
       </h2>
 
-      <div className="bg-[#112240] border-2 border-[#64FFDA] rounded-2xl shadow-md hover:shadow-[0_0_25px_#64ffda40] transition p-8 max-w-4xl mx-auto">
+      {/* Contact Info Box */}
+      <div className="bg-[#112240] border-2 border-[#64FFDA] rounded-2xl shadow-md hover:shadow-[0_0_25px_#64ffda40] transition p-8 max-w-4xl mx-auto mb-12">
         <div className="grid md:grid-cols-2 gap-8">
           {/* Left Section */}
           <div className="space-y-4">
@@ -55,9 +56,9 @@ const ContactPage = () => {
             <h3 className="text-2xl font-bold mb-4 text-[#64ffda]">
               Find me on
             </h3>
-            <div className="flex flex-wrap gap-5 text-2xl text-[#64ffda]">
+            <div className="flex flex-wrap gap-5 text-4xl text-[#64ffda]">
               <a
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/abusalehalam.khan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white transition"
@@ -65,7 +66,7 @@ const ContactPage = () => {
                 <FaFacebook />
               </a>
               <a
-                href="https://www.linkedin.com/in/"
+                href="https://www.linkedin.com/in/abusaleh-alam-khan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white transition"
@@ -73,7 +74,7 @@ const ContactPage = () => {
                 <FaLinkedin />
               </a>
               <a
-                href="https://github.com/"
+                href="https://github.com/abusaleh569857"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white transition"
@@ -81,7 +82,7 @@ const ContactPage = () => {
                 <FaGithub />
               </a>
               <a
-                href="https://twitter.com/"
+                href="https://x.com/Abusaleh_here"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white transition"
@@ -89,24 +90,66 @@ const ContactPage = () => {
                 <FaTwitter />
               </a>
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/abusalehalamkhan/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white transition"
               >
                 <FaInstagram />
               </a>
+              <a
+                href="https://wa.me/8801837569857"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition"
+              >
+                <FaWhatsapp />
+              </a>
             </div>
           </div>
         </div>
 
-        {/* Optional message line */}
         <div className="mt-8 text-center text-gray-400">
           <p>
             Feel free to reach out for collaboration, freelance, or just a tech
             chat!
           </p>
         </div>
+      </div>
+
+      {/* Contact Form */}
+      <div className="max-w-3xl mx-auto bg-[#112240] border-2 border-[#64FFDA] rounded-2xl shadow-md hover:shadow-[0_0_25px_#64ffda40] transition p-8">
+        <h3 className="text-2xl font-bold mb-6 text-center text-[#64ffda]">
+          Send me a message
+        </h3>
+        <form
+          action="https://formsubmit.co/abusaleh.cse.uiu@gmail.com"
+          method="POST"
+          className="space-y-6"
+        >
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="text"
+            name="name"
+            required
+            placeholder="Your Name"
+            className="w-full p-3 rounded bg-[#0f1e3a] border border-[#64FFDA] text-white focus:outline-none transition-shadow hover:shadow-[0_0_10px_#64ffda]"
+          />
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="Your Email"
+            className="w-full p-3 rounded bg-[#0f1e3a] border border-[#64FFDA] text-white focus:outline-none transition-shadow hover:shadow-[0_0_10px_#64ffda]"
+          />
+          <textarea
+            name="message"
+            required
+            placeholder="Your Message"
+            rows="5"
+            className="w-full p-3 rounded bg-[#0f1e3a] border border-[#64FFDA] text-white focus:outline-none transition-shadow hover:shadow-[0_0_10px_#64ffda]"
+          ></textarea>
+        </form>
       </div>
     </section>
   );
