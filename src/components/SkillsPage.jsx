@@ -8,7 +8,7 @@ const SkillsPage = () => {
     { name: "JavaScript", icon: "/icons/JavaScript.png" },
     { name: "React JS", icon: "/icons/React JS.png" },
     { name: "Tailwind CSS", icon: "/icons/Tailwind CSS.png" },
-    { name: "DaisyUI", icon: "/icons/DaisyUI.png" },
+    { name: "DaisyUI", icon: "/icons/daisyui1.png" },
   ];
 
   const backendSkills = [
@@ -17,7 +17,7 @@ const SkillsPage = () => {
     { name: "MongoDB", icon: "/icons/MongoDB.png" },
     { name: "MySQL", icon: "/icons/MySQL.png" },
     { name: "Firebase", icon: "/icons/Firebase.png" },
-    { name: "JWT", icon: "/icons/JWT.png" },
+    { name: "JWT", icon: "/icons/jwt.png" },
   ];
 
   const languageSkills = [
@@ -31,8 +31,8 @@ const SkillsPage = () => {
     { name: "Git", icon: "/icons/Git.png" },
     { name: "GitHub", icon: "/icons/Github.png" },
     { name: "Postman", icon: "/icons/Postman.png" },
-    { name: "Vercel", icon: "/icons/Vercel.png" },
-    { name: "Netlify", icon: "/icons/Netlify.png" },
+    { name: "Vercel", icon: "/icons/vercel.png" },
+    { name: "Netlify", icon: "/icons/netlify.png" },
     { name: "VS Code", icon: "/icons/VS Code.png" },
   ];
 

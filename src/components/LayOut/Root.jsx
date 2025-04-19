@@ -6,6 +6,7 @@ import SkillsPage from "../SkillsPage";
 import EducationSection from "../EducationSection";
 import ExperienceSection from "../ExperienceSection";
 import ContactPage from "../ContactPage";
+import Footer from "../Footer";
 // import { Outlet } from "react-router-dom";
 
 const Root = () => {
@@ -18,6 +19,7 @@ const Root = () => {
       <EducationSection></EducationSection>
       <ExperienceSection></ExperienceSection>
       <ContactPage></ContactPage>
+      <Footer></Footer>
       {/* <Outlet></Outlet> */}
     </div>
   );

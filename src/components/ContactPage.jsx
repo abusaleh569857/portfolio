@@ -149,6 +149,13 @@ const ContactPage = () => {
             rows="5"
             className="w-full p-3 rounded bg-[#0f1e3a] border border-[#64FFDA] text-white focus:outline-none transition-shadow hover:shadow-[0_0_10px_#64ffda]"
           ></textarea>
+
+          <button
+            type="submit"
+            className="bg-[#64ffda] hover:bg-white hover:text-[#0f1e3a] text-[#0f1e3a] font-bold py-3 px-6 rounded transition w-full"
+          >
+            Send Message
+          </button>
         </form>
       </div>
     </section>
