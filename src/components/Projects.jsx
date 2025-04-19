@@ -20,6 +20,14 @@ const projectData = [
       "MongoDB",
       "Firebase",
     ],
+    challenges: [
+      "Role-based access control with three dashboards was tricky to sync across frontend & backend.",
+      "Handling real-time product approval status updates smoothly across UI components.",
+    ],
+    futurePlans: [
+      "Add real-time notifications for product approval/rejections.",
+      "Integrate payment gateway for premium feature purchases.",
+    ],
   },
   {
     title: "Responsive Landing Page(Frontend)",
@@ -42,6 +50,14 @@ const projectData = [
     link: "https://abusaleh569857.github.io/B-10-Assignment-03/",
     github: "https://github.com/abusaleh569857/B-10-Assignment-03",
     technologies: ["HTML", "CSS", "Media Queries", "Flexbox"],
+    challenges: [
+      "Creating pixel-perfect responsiveness without using any frameworks or libraries.",
+      "Ensuring consistent layout across multiple screen sizes.",
+    ],
+    futurePlans: [
+      "Add basic animations and scroll-based effects with vanilla JS.",
+      "Improve accessibility by adding ARIA labels and focus states.",
+    ],
   },
 
   {
@@ -85,6 +101,14 @@ const projectData = [
       "MongoDB",
       "JWT",
       "dotenv",
+    ],
+    challenges: [
+      "Securing sensitive visa data through protected backend routes.",
+      "Implementing live search and filters in a performant way.",
+    ],
+    futurePlans: [
+      "Integrate country API for real-time visa info updates.",
+      "Implement push notifications for visa updates.",
     ],
   },
 
@@ -131,6 +155,14 @@ const projectData = [
       "React Rating Stars",
       "React Slick",
       "React Icons",
+    ],
+    challenges: [
+      "Managing book availability state and borrowing flow in real time.",
+      "Creating an intuitive review & rating modal system.",
+    ],
+    futurePlans: [
+      "Introduce user role for librarians to manage books directly.",
+      "Add recommendation system based on user activity.",
     ],
   },
 ];
@@ -238,6 +270,30 @@ const Projects = () => {
             <p className="text-gray-300 text-sm text-justify mb-6 font-mono">
               {selectedProject.fullDesc}
             </p>
+            {/* Challenges & Future Plans */}
+
+            <div className="mb-6 space-y-4">
+              <div>
+                <h3 className="text-xl font-semibold text-[#64FFDA] mb-1">
+                  ⚠️ Challenges Faced
+                </h3>
+                <ul className="list-disc list-inside text-sm text-gray-300 font-mono space-y-1">
+                  {selectedProject.challenges.map((challenge, i) => (
+                    <li key={i}>{challenge}</li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-[#64FFDA] mb-1">
+                  🌱 Future Plans
+                </h3>
+                <ul className="list-disc list-inside text-sm text-gray-300 font-mono space-y-1">
+                  {selectedProject.futurePlans.map((plan, i) => (
+                    <li key={i}>{plan}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
 
             <div className="flex flex-col md:flex-row gap-4">
               <a
